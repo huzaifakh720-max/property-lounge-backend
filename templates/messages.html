@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Messages</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+
+/* HEADER */
+
+.header{
+background:#2e7d32;
+color:white;
+padding:15px;
+text-align:center;
+font-size:22px;
+}
+
+/* TABLE CONTAINER */
+
+.container{
+width:90%;
+margin:40px auto;
+overflow-x:auto;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+th,td{
+padding:12px;
+text-align:left;
+border-bottom:1px solid #ddd;
+}
+
+th{
+background:#2e7d32;
+color:white;
+}
+
+tr:hover{
+background:#f1f1f1;
+}
+
+/* MOBILE DESIGN */
+
+@media(max-width:768px){
+
+table{
+display:block;
+}
+
+thead{
+display:none;
+}
+
+tr{
+display:block;
+margin-bottom:20px;
+border:1px solid #ddd;
+padding:10px;
+border-radius:8px;
+}
+
+td{
+display:block;
+text-align:left;
+padding:8px;
+}
+
+td::before{
+font-weight:bold;
+display:block;
+margin-bottom:3px;
+}
+
+td:nth-child(1)::before{
+content:"ID";
+}
+
+td:nth-child(2)::before{
+content:"Name";
+}
+
+td:nth-child(3)::before{
+content:"Email";
+}
+
+td:nth-child(4)::before{
+content:"Message";
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="header">
+Contact Messages
+</div>
+
+<div class="container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Message</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for m in messages %}
+
+<tr>
+
+<td>{{m.id}}</td>
+
+<td>{{m.name}}</td>
+
+<td>{{m.email}}</td>
+
+<td>{{m.message}}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+
+</html>

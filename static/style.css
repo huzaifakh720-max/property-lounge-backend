@@ -1,0 +1,1123 @@
+/* =========================
+GLOBAL
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2e7d32;
+}
+
+nav a{
+margin-left:25px;
+font-weight:500;
+color:#444;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2e7d32;
+}
+
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero{
+height:85vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("/static/images/villa1.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+
+/* SEARCH */
+
+.search-box{
+display:flex;
+justify-content:center;
+}
+
+.search-box input{
+padding:12px;
+width:260px;
+border:none;
+border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+padding:12px 20px;
+background:#2e7d32;
+border:none;
+color:white;
+border-radius:0 5px 5px 0;
+cursor:pointer;
+transition:0.3s;
+}
+
+.search-box button:hover{
+background:#1b5e20;
+}
+
+
+/* =========================
+FEATURED PROPERTIES
+========================= */
+
+.featured{
+padding:70px 8%;
+text-align:center;
+}
+
+.featured h2{
+font-size:30px;
+margin-bottom:40px;
+}
+
+.property-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+
+/* PROPERTY CARD */
+
+.property-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.property-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.property-card img{
+height:200px;
+object-fit:cover;
+}
+
+.property-info{
+padding:18px;
+}
+
+.property-info h3{
+margin-bottom:5px;
+}
+
+.location{
+color:#777;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.price{
+font-weight:bold;
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+.view-btn{
+display:inline-block;
+padding:8px 16px;
+background:#2e7d32;
+color:white;
+border-radius:5px;
+font-size:14px;
+transition:0.3s;
+}
+
+.view-btn:hover{
+background:#1b5e20;
+}
+
+
+/* =========================
+VIDEO SECTION
+========================= */
+
+.video-tour{
+padding:70px 8%;
+text-align:center;
+background:white;
+}
+
+.video-tour h2{
+margin-bottom:30px;
+}
+
+.video-container video{
+width:100%;
+max-width:900px;
+border-radius:10px;
+}
+
+
+/* =========================
+WHY US
+========================= */
+
+.why-us{
+padding:70px 8%;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+}
+
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+padding:70px 8%;
+text-align:center;
+background:#2e7d32;
+color:white;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+.cta-btn{
+background:white;
+color:#2e7d32;
+padding:10px 25px;
+border-radius:5px;
+font-weight:bold;
+}
+
+.cta-btn:hover{
+opacity:0.9;
+}
+
+
+/* =========================
+CONTACT FORM
+========================= */
+
+.contact-section{
+padding:80px 8%;
+display:flex;
+justify-content:center;
+}
+
+.contact-container{
+background:white;
+padding:35px;
+width:400px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-container input,
+.contact-container textarea{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+.contact-container button{
+width:100%;
+padding:10px;
+background:#2e7d32;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact-container button:hover{
+background:#1b5e20;
+}
+
+
+/* =========================
+PRIVACY PAGE
+========================= */
+
+.privacy-section{
+max-width:900px;
+margin:60px auto;
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.privacy-section h1{
+margin-bottom:20px;
+}
+
+.privacy-section h3{
+margin-top:20px;
+color:#2e7d32;
+}
+
+
+/* =========================
+PROPERTY DETAILS
+========================= */
+
+.property-detail{
+max-width:1000px;
+margin:50px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.property-detail img{
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.property-detail h1{
+margin-bottom:10px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+margin-top:40px;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:32px;
+}
+
+.search-box{
+flex-direction:column;
+}
+
+.search-box input{
+width:100%;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+.search-box button{
+border-radius:5px;
+}
+
+.header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:10px;
+}
+
+}
+
+/* ABOUT HERO */
+
+.about-hero{
+
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("/static/images/villa1.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:40vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+color:white;
+text-align:center;
+}
+
+.about-hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+
+
+/* ABOUT SECTION */
+
+.about-container{
+padding:80px 8%;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-image img{
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-text h2{
+margin-bottom:15px;
+color:#2e7d32;
+}
+
+.about-text p{
+margin-bottom:10px;
+}
+
+
+
+/* STATS */
+
+.stats{
+background:#2e7d32;
+color:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+padding:50px 8%;
+}
+
+.stat h2{
+font-size:36px;
+}
+
+
+
+/* TEAM */
+
+.team{
+padding:80px 8%;
+text-align:center;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.team-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.team-card:hover{
+transform:translateY(-10px);
+}
+
+.team-card img{
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.about-hero h1{
+font-size:28px;
+}
+
+}
+
+
+/* SERVICES HERO */
+
+.services-hero{
+
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("/static/images/apartment1.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:40vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+}
+
+.services-hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+
+
+/* SERVICES GRID */
+
+.services-container{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+text-align:center;
+}
+
+
+
+/* SERVICE CARD */
+
+.service-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+transition:0.4s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+.service-card i{
+
+font-size:40px;
+
+color:#2e7d32;
+
+margin-bottom:15px;
+
+}
+
+.service-card h3{
+
+margin-bottom:10px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.services-hero h1{
+
+font-size:28px;
+
+}
+
+}
+
+
+/* CONTACT HERO */
+
+.contact-hero{
+
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("/static/images/property1.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:40vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+color:white;
+text-align:center;
+}
+
+
+
+/* CONTACT SECTION */
+
+.contact-section{
+
+padding:80px 8%;
+
+display:flex;
+justify-content:center;
+
+}
+
+
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+max-width:1000px;
+
+}
+
+
+
+.contact-form{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:10px;
+
+margin-bottom:15px;
+
+border:1px solid #ddd;
+
+border-radius:5px;
+
+}
+
+
+
+.contact-form button{
+
+background:#2e7d32;
+
+color:white;
+
+border:none;
+
+padding:12px;
+
+width:100%;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+
+
+.contact-info{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+
+
+.contact-info p{
+
+margin:10px 0;
+
+}
+
+
+
+.social-icons{
+
+margin-top:15px;
+
+}
+
+
+
+.social-icons a{
+
+font-size:20px;
+
+margin-right:10px;
+
+color:#2e7d32;
+
+}
+
+
+
+.whatsapp-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#25D366;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:5px;
+
+}
+
+
+
+/* MAP */
+
+.map iframe{
+
+width:100%;
+
+height:400px;
+
+border:0;
+
+margin-top:40px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* PRIVACY HERO */
+
+.privacy-hero{
+
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("/static/images/property2.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:35vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+animation:fadeIn 1.5s ease;
+
+}
+
+
+
+.privacy-hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.privacy-hero p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+
+
+/* PRIVACY GRID */
+
+.privacy-container{
+
+padding:80px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.privacy-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+
+
+.privacy-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.privacy-card i{
+
+font-size:35px;
+
+color:#2e7d32;
+
+margin-bottom:15px;
+
+}
+
+
+
+.privacy-card h3{
+
+margin-bottom:10px;
+
+}
+
+
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* ================= MOBILE FIRST IMPROVEMENTS ================= */
+
+@media (max-width:768px){
+
+/* HEADER */
+.header{
+padding:12px 5%;
+}
+
+.logo{
+font-size:18px;
+}
+
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+width:100%;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav a{
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
+nav.active{
+display:flex;
+}
+
+/* HERO */
+
+.hero{
+height:75vh;
+}
+
+.hero-content h1{
+font-size:26px;
+line-height:1.3;
+}
+
+.hero-content p{
+font-size:14px;
+margin:10px 0;
+}
+
+.hero-content form{
+display:flex;
+flex-direction:column;
+gap:10px;
+align-items:center;
+}
+
+.hero-content input{
+width:90%;
+font-size:14px;
+}
+
+.hero-content button{
+width:90%;
+}
+
+/* PROPERTY GRID */
+
+.properties{
+padding:30px 5%;
+}
+
+.property-grid{
+grid-template-columns:1fr;
+}
+
+.card{
+border-radius:12px;
+overflow:hidden;
+}
+
+.card img{
+height:180px;
+}
+
+.card h3{
+font-size:18px;
+}
+
+.card a{
+font-size:14px;
+}
+
+/* CONTACT PAGE */
+
+.contact-container{
+padding:20px;
+}
+
+.contact-box{
+width:100%;
+padding:20px;
+}
+
+/* ABOUT PAGE */
+
+.about-section{
+padding:30px 5%;
+}
+
+/* SERVICES */
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+/* PRIVACY */
+
+.privacy-section{
+margin:20px;
+padding:20px;
+}
+
+/* FOOTER */
+
+footer{
+font-size:13px;
+padding:15px;
+}
+
+}
+
+/* ================= TOUCH EFFECTS ================= */
+
+button, a{
+transition:0.3s;
+}
+
+button:active{
+transform:scale(0.95);
+}
+
+.card:active{
+transform:scale(0.98);
+}
+
+/* ================= SMOOTH ANIMATION ================= */
+
+.card{
+opacity:0;
+transform:translateY(20px);
+animation:fadeUp 0.6s forwards;
+}
+
+.card:nth-child(2){ animation-delay:0.2s; }
+.card:nth-child(3){ animation-delay:0.4s; }
+.card:nth-child(4){ animation-delay:0.6s; }
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{property.title}}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">Property Lounge</div>
+
+<nav>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/services">Services</a>
+<a href="/contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="property-detail">
+
+<div class="property-container">
+
+<img src="{{ url_for('static', filename='images/' + property.image) }}" class="property-img">
+
+<div class="property-info">
+
+<h1>{{property.title}}</h1>
+
+<p class="price">{{property.price}}</p>
+
+<p class="location">{{property.location}}</p>
+
+<p class="description">
+Luxury property located in a prime area with modern architecture,
+spacious interiors and premium amenities.
+</p>
+
+<a class="contact-btn" href="/contact">Contact Agent</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Property Lounge</p>
+
+</footer>
+
+</body>
+
+</html>
